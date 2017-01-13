@@ -1,0 +1,24 @@
+body {
+    background-color: white;
+}
+
+h1{
+  font-size: 30px;
+  font-style: oblique;
+}
+h2{
+  font-size: 15px;
+
+}
+section{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+article{
+  width: 450px;
+  float: left;
+
+}
+aside{
+}

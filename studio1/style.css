@@ -1,0 +1,77 @@
+body {
+    background-color: #708090;
+}
+
+h1 {
+    color: black;
+
+    text-align: center;
+    /*margin-left: auto;
+    margin-right: auto;*/
+
+}
+header {
+  height: 250px;
+  width: 800px;
+  background-color: lightpink;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+
+
+}
+section{
+  height: 200px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: powderblue;
+}
+h2{
+  margin-left: auto;
+  margin-right: auto;
+}
+#excercises{
+  height: 20px;
+  width: 300px;
+  float: left;
+  background-color: #708090;
+}
+#studios {
+  height: 20px;
+  width: 300px;
+  float: left;
+  background-color: #708090;
+}
+#project {
+  height: 20px;
+  width: 300px;
+  float: left;
+  background-color: #708090;
+
+
+}
+footer{
+  background-color: lightpink;
+  height: 50px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*#footer div{
+  background-color: grey;
+}*/
+#footerList li {
+
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+   list-style-type: none;
+  float: left;
+  width: 150px;
+  position: relative;
+
+}
