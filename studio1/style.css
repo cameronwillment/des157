@@ -78,12 +78,12 @@ footer{
 }*/
 #footerList li {
 
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   /*display: inline-block;*/
    list-style-type: none;
   float: left;
-  width: 150px;
+  width: 100px;
   /*position: relative;*/
 
 }
