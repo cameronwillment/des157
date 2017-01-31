@@ -65,3 +65,26 @@ label{
   img{
     z-index: -1;
   }
+  footer{
+    /*display: inline-block;*/
+
+    /*background-color: lightpink;*/
+    height: 40px;
+    width: 700px;
+    margin:auto;
+    margin-top: 300px;
+  }
+  /*#footer div{
+    background-color: grey;
+  }*/
+  #footerList li {
+
+    font-size: 15px;
+    text-align: center;
+    /*display: inline-block;*/
+     list-style-type: none;
+    float: left;
+    width: 100px;
+    /*position: relative;*/
+
+  }
