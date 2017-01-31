@@ -6,6 +6,62 @@
 /* start all css with a reset */
 
 * {
+  font-family: "Comic Sans MS";
   margin: 0px;
-  padding: 0px
+  padding: 0px;
+
+
 }
+h1{
+
+  text-align: center;
+}
+
+#buttons{
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+#container {
+  /*z-index: -2;*/
+  margin:auto;
+  width: 500px;
+  height: 320px;
+  background-color: darkgreen;
+  border:none;
+  border-radius: 5px;
+  border-color: black;
+  padding: 10px;
+  /*position: relative;*/
+
+}
+input{
+  border-width: 4px;
+  border-color: gold;
+  padding: 3px;
+  position: relative;
+}
+
+#animate {
+  border:none;
+  border-radius: 5px;
+  z-index: -1;
+  width: 500px;
+  height: 130px;
+  position: absolute;
+  background-color: gold;
+  /*padding-right: 1px;*/
+}
+label{
+  color:gold;
+  text-align:right;
+  display:inline-block;
+}
+#myMsg{
+  padding: 10px;
+  color:white;
+}
+  img{
+    z-index: -1;
+  }

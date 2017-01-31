@@ -7,11 +7,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // all other js here
 
     //capture the submit event
+
     document.f.onsubmit = processForm;
+
     document.f.onreset = hideLim;
+
   //define process function
     function processForm() {
+    myMove();
 
+    console.log("processForm");
     //store user name in a variable
     var input1  = document.f.input1.value;
     var input2  = document.f.input2.value;
@@ -22,11 +27,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var myMsg=document.getElementById('myMsg');
 
-    myMsg.innerHTML = "There once was a man named " +input1 +"<br>"
-    + "Who did nothing all day but " + input2 + "<br>"
-    + "Until one day he lost his "+input3+"<br>"
-    + "And was left with nothing but his" +input4 + "<br>"
-    + "So now all he does is "+input5;
+    myMsg.innerHTML = "Near " +input1 +" lived a man named John<br>"
+    + "Who " + input2 + " untill early dawn<br>"
+    + "Then one "+input3+" day<br>"
+    + "His " +input4 + " made him stay<br>"
+    + "Now John just "+input5 + " on his lawn.";
      //prevent page from reloading
     return false;
 
@@ -34,7 +39,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function hideLim(){
       console.log("Hide");
       myMsg.style.display = 'none';
+      var elem = document.getElementById("animate");
+      elem.style.display = 'none';
 
+    }
+    function myMove() {
+      console.log("move");
+      var elem = document.getElementById("animate");
+      var pos  = 150;
+      var id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 383) {
+          clearInterval(id);
+        } else {
+          pos++;
+        elem.style.top = pos + 'px';
+
+        }
+      }
     }
 
 

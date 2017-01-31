@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>CamLib</title>
     <link href="style.css" rel="stylesheet"/>
+
     <script src='script.js' type="text/javascript"></script>
 </head>
 <!-- There once was a lady named sue,
@@ -20,24 +21,36 @@ now she has but two. -->
   </header>
   <article>
     <form name = "f">
-      <div>
-        <label>Enter a persons name:</label>
-        <input type = "text" name = "input1"> <br>
-        <label>Enter a verb that rhymes with that name:</label>
-        <input type = "text" name = "input2"><br>
-        <label>Enter a noun:</label>
-        <input type = "text" name = "input3"><br>
-        <label>Enter a noun that rhymes with that noun:</label>
-        <input type = "text" name = "input4"><br>
-        <label>Enter a noun that rhymes with the first name:</label>
-        <input type = "text" name = "input5">
-      </div>
+      <div id = "container">
+        <img id = "img" src = "beer.png">
+        <div id = "animate">
+        </div>
+        <div id ="input">
+          <label>Enter a place:</label>
+          <input type = "text" name = "input1"> <br>
+          <label>Enter a verb (past tense):</label>
+          <input type = "text" name = "input2"><br>
+          <label>Enter an adjective:</label>
+          <input type = "text" name = "input3"><br>
+          <label>Enter a persons title (ie. sister/bus driver):</label>
+          <input type = "text" name = "input4"><br>
+          <label>Enter a present tense verb (ie. jumps):</label>
+          <input type = "text" name = "input5">
+        </div>
+        <div id = "buttons">
+          <input type="reset" value="reset" />
+          <input type="submit" value="submit" />
+        </div>
+        <p id = "myMsg">
 
-      <input type="reset" value="reset" />
-      <input type="submit" value="submit" />
+        </p>
+    </div>
+
+      <!-- <input type="reset" value="reset" />
+      <input type="submit" value="submit" /> -->
     </form>
   </article>
-  <p id = "myMsg">
+  <!-- <p id = "myMsg"> -->
 
   </p>
 
