@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://glendadrew.github.io/des157-w17/html/bookExTemplate.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>cat.html</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 13-the cat's hat</h1>
+    <!-- <h2></h2> -->
+    <!-- <img src="cat.png" id="cat" style="position: absolute">
+    <img src="hat.png" id="hat" style="position: absolute">
+
+    <script>
+      var cat = document.querySelector("#cat");
+      var hat = document.querySelector("#hat");
+
+    </script> -->
+    <p style="text-align: center">
+      <img src="cat.png" id="cat" style="position: absolute">
+      <img src="hat.png" id="hat" style="position: absolute">
+    </p>
+<script>
+var cat = document.querySelector("#cat");
+var hat = document.querySelector("#hat");
+  var angle = 0, lastTime = null;
+  function animate(time) {
+    if (lastTime != null)
+      angle += (time - lastTime) * 0.001;
+    lastTime = time;
+    cat.style.top = (200+Math.sin(angle) * 20) + "px";
+    cat.style.left = (200+Math.cos(angle) * 200) + "px";
+    hat.style.top = (200+Math.cos(angle) * 20) + "px";
+    hat.style.left = (200+Math.sin(angle) * 200) + "px";
+
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+</script>
+
+</body></html>
