@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* start all css with a reset */
+
+* {
+  font-family: "Arial";
+  margin: 0px;
+  padding: 0px;
+
+
+}
+h1{
+
+  text-align: center;
+}
+
+.album{
+  height: 250px;
+  width: 250px;
+}
+
+main{
+  position: relative;
+  margin:auto;
+  background:black;
+  width: 800px;
+}
+#gallery{
+  /*float:left;*/
+}
+  footer{
+    /*display: inline-block;*/
+
+    /*background-color: lightpink;*/
+    height: 40px;
+    width: 700px;
+    margin:auto;
+    margin-top: 300px;
+  }
+  /*#footer div{
+    background-color: grey;
+  }*/
+  #footerList li {
+
+    font-size: 15px;
+    text-align: center;
+    /*display: inline-block;*/
+     list-style-type: none;
+    float: left;
+    width: 100px;
+    /*position: relative;*/
+
+  }
