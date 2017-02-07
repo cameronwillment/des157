@@ -1,58 +1,149 @@
 <!doctype html>
+<!-- image sources:
+alt j: https://en.wikipedia.org/wiki/File:Alt-J_-_An_Awesome_Wave.png
+TPAB: https://www.reddit.com/r/hiphopheads/comments/2yn9xa/kendrick_album_artwork_and_title_confirmed_to/
+acid rap: https://en.wikipedia.org/wiki/Acid_Rap#/media/File:Chance_the_rapper_acid_rap.jpg
+joey badass: https://upload.wikimedia.org/wikipedia/en/f/ff/Joey_Badass_B4.Da.$$.jpg
+leon bridges: https://en.wikipedia.org/wiki/Coming_Home_(Leon_Bridges_album)#/media/File:Coming_Home_Leon_Bridges.jpg
+pablo: http://djbooth.net/news/entry/2016-02-15-kanye-west-the-life-of-pablo-cover-art-breakdown
+earl: https://en.wikipedia.org/wiki/I_Don't_Like_Shit,_I_Don't_Go_Outside:_An_Album_by_Earl_Sweatshirt#/media/File:I_Don%27t_Like_Shit,_I_Don%27t_Go_Outside_An_Album_by_Earl_Sweatshirt.jpg
+tame: https://en.wikipedia.org/wiki/Currents_(Tame_Impala_album)#/media/File:Currents_artwork_(Tame_Impala_album).jpg
+anderson paak: https://en.wikipedia.org/wiki/Malibu_(album)#/media/File:Anderson-Park-Malibu-Cover-Billboard-650x650.jpg
+daft punk: https://en.wikipedia.org/wiki/File:Random_Access_Memories.jpg
+https://en.wikipedia.org/wiki/Sound_%26_Color#/media/File:Alabama_Shakes_-_Sound_%26_Color_album_cover.jpg
+https://en.wikipedia.org/wiki/My_Beautiful_Dark_Twisted_Fantasy#/media/File:My_Beautiful_Dark_Twisted_Fantasy.jpg
+-->
+
 <html>
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <meta charset="UTF-8">
-    <title>CamLib</title>
-    <link href="style.css" rel="stylesheet"/>
+    <title>Studio3--Cameron</title>
+    <link href="style.css" rel="stylesheet" />
 
     <script src='script.js' type="text/javascript"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>MUSIC</h1>
-    <a href="acidRap.mp3">Play music</a>
+    <!-- <audio controls>
+  <source src="music/paak.mp3" type="audio/mp3">
 
-  </header>
-  <main>
+Your browser does not support the audio element.
+</audio> -->
+    <audio id="paak" src="music/paak.mp3" preload="auto"></audio>
+    <audio id="earlSong" src="music/earl.mp3" preload="auto"></audio>
+    <audio id="juice" src="music/juice.mp3" preload="auto"></audio>
+    <audio id="breez" src="music/breez.mp3" preload="auto"></audio>
+    <audio id="paper" src="music/paper.mp3" preload="auto"></audio>
+    <audio id="daft" src="music/daft.mp3" preload="auto"></audio>
+    <audio id="shakes" src="music/shakes.mp3" preload="auto"></audio>
+    <audio id="tribeER" src="music/tribeER.mp3" preload="auto"></audio>
+    <audio id="power" src="music/power.mp3" preload="auto"></audio>
 
-    <!-- <img id = "cup" src = "cup.png" alt = "cup"> -->
-    <!-- <img id = "cup" src = "cup.png" alt = "cup">
+    <!-- <embed src="music/paak.mp3" loop="true" hidden="true"> -->
+    <header>
+        <h1>Pocket full of Music</h1>
+        <!-- <a href="acidRap.mp3">Play music</a> -->
+
+    </header>
+    <main>
+
+        <!-- <img id = "cup" src = "cup.png" alt = "cup"> -->
+        <!-- <img id = "cup" src = "cup.png" alt = "cup">
     <img id = "cup" src = "cup.png" alt = "cup"> -->
 
-    <div id = "gallery">
-      <img class = "album" id = "TPAB" src = "albumPics/TPAB.png" alt = "album artwork" onclick = "expandPic()">
-      <img class = "album" id = "acidRap" src = "albumPics/acidRap.jpg" alt = "album artwork">
-      <img class = "album" src = "albumPics/TPAB.png" alt = "album artwork">
-      <img class = "album" src = "albumPics/acidRap.jpg" alt = "album artwork">
-      <img class = "album" src = "albumPics/TPAB.png" alt = "album artwork">
-      <img class = "album" src = "albumPics/acidRap.jpg" alt = "album artwork">
+        <div id="gallery">
+            <div id="card1" class="card" class="test">
+                <div class="front" onclick="paak.play()">
+                    <img class="album" id="Apaak" src="albumPics/paak.jpg" alt="album artwork">
+                </div>
+                <div class="back" onclick="paak.pause()">
+                    This album is one of the smoothest albums out there. Beautiful RnB/hip hop that oozes with style and swagger.
 
-    </div>
+                </div>
+            </div>
+            <div id="card2" class="card">
+                <div class="front" onclick="juice.play()">
+                    <img class="album" id="acidRap" src="albumPics/acidRap.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="juice.pause()">
+                    This is Chance the Rappers greatest album by far. Nothing more fun than hearing a happy go lucky kid take drugs and poke fun at life.
+                </div>
+            </div>
+            <div id="card3" class="card">
+                <div class="front" onclick="breez.play()">
+                    <img class="album" id="altJ" src="albumPics/altJ.png" alt="album artwork"> </div>
+                <div class="back" onclick="breez.pause()">
+                    Their debut album blew me off of my feet. Beutiful harmonies mixed with unique instrumentals. There's nothing quite like alt-J.
+                </div>
+            </div>
+            <div id="card4" class="card">
+                <div class="front" onclick="paper.play()">
+                    <img class="album" id="joey" src="albumPics/joey.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="paper.pause()">
+                    Everything a rap album should be. Great beats with beast rapping. Joey isn't changing the game, he has perfected it.
+                </div>
+            </div>
+            <div id="card5" class="card">
+                <div class="front" onclick="daft.play()">
+                    <img class="album" id="leon" src="albumPics/ram.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="daft.pause()">
+                    This is a great modern disco album with suprisingly deep lyrics. Fun to dance to and sit back and listen to.
+                </div>
+            </div>
+            <div id="card6" class="card">
+                <div class="front" onclick="shakes.play()">
+                    <img class="album" id="pablo" src="albumPics/alabamaShakes.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="shakes.pause()">
+                    This is a beautiful soul rock album that I love to wake up to. I can easily listen to the whole thing without noticing.
+                </div>
+            </div>
+            <div id="card7" class="card">
+                <div class="front" onclick="earlSong.play()">
+                    <img class="album" id="earl" src="albumPics/earl.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="earlSong.pause()">
+                    Earl raps like no one else. Deeply depressing and meaningful lyrics spun in the most incredible ways.
+                    <!-- Songs from a different album I coulnt help it -->
 
-  </main>
-  <article>
+                </div>
+            </div>
+            <div id="card8" class="card">
+                <div class="front" onclick="tribeER.play()">
+                    <img class="album" id="tribeMM" src="albumPics/tribeMM.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="tribeER.pause()">
+                    My favorite album form my favorite band. Tribe is legendary. Bringing postivity and chillness to an era of gansta rap.
+                </div>
+            </div>
+            <div id="card9" class="card" class="test">
+                <div class="front" onclick="power.play()">
+                    <img class="album" id="tame" src="albumPics/kanye.jpg" alt="album artwork"> </div>
+                <div class="back" onclick="power.pause()">
+                    Kanye this Kanye that. Name a song on this album that isn't amazing. Kanye revolutionized the way we sample music.
+                </div>
+            </div>
+        </div>
+    </main>
+    <article>
 
-  </article>
+    </article>
 
-  <footer>
+    <footer>
 
-       <ul id = "footerList">
-         <li> <a href = "https://github.com/cameronwillment/des157"> GitHub </a> </li>
-         <li> | </li>
-         <li> <a href = "mailto:cmwillment@ucdavis.edu"> email </a> </li>
-         <li> | </li>
-         <li> <a href="https://validator.w3.org/check?uri=referer">valid html 5</a> </li>
-         <li> | </li>
-         <li> <a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a> </li>
-       </ul>
-    <!-- </div> -->
+        <ul id="footerList">
+            <li> <a href="https://github.com/cameronwillment/des157"> GitHub </a> </li>
+            <li> | </li>
+            <li> <a href="mailto:cmwillment@ucdavis.edu"> email </a> </li>
+            <li> | </li>
+            <li> <a href="https://validator.w3.org/check?uri=referer">valid html 5</a> </li>
+            <li> | </li>
+            <li> <a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a> </li>
+        </ul>
+        <!-- </div> -->
 
-  </footer>
+    </footer>
 
 </body>
 
