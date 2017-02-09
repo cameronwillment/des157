@@ -20,10 +20,40 @@ body{
   background-color: black;
 }
 #container{
+  position: relative;
   margin: auto;
   background-color: white;
-  height: 1334px;
-  width: 750px;
+  height: 1674px;
+  width: 980px;
+}
+/*img{
+  position: absolute;
+}*/
+#timer1{
+  position: absolute;;
+  bottom:100px;
+  left:247.5px;
+
+}
+#timer2{
+  position: absolute;;
+  top:100px;
+  left:247.5px;
+}
+#pause{
+  position: absolute;;
+  top:590px;
+  left:238px;
+}
+#play{
+  position: absolute;;
+  top:550px;
+  left:50px;
+}
+#restart{
+  position: absolute;;
+  top:550px;
+  right:50px;
 }
   footer{
     /*display: inline-block;*/
