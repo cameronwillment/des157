@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://glendadrew.github.io/des157-w17/html/bookExTemplate.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>! Cameron's Book Excersize ch14 !</title>
+    <style>
+        .trail {
+            /* className for the trail elements */
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 3px;
+            background: teal;
+        }
+
+        body {
+            height: 300px;
+        }
+    </style>
+    <body>
+    <script>
+        var trailArr = [];
+        for (var i = 0; i < 12; i++) {
+            var node = document.createElement("div");
+            node.className = "trail";
+            document.body.appendChild(node);
+            trailArr.push(node);
+        }
+        var currentDot = 0;
+
+        addEventListener("mousemove", function(event) {
+            var dot = trailArr[currentDot];
+            dot.style.left = (event.pageX - 5) + "px";
+            dot.style.top = (event.pageY - 5) + "px";
+            currentDot = (currentDot + 5) % trailArr.length;
+        });
+    </script>
+
+    </body>
+
+</html>
