@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var myVar;
     var tipTimer;
 
-    pause.addEventListener('mouseover', function() {
+    pause.addEventListener('touchstart', function() {
         tipTimer = setTimeout(showPauseTip, 1000);
     });
-    play.addEventListener('mouseover', function() {
+    play.addEventListener('touchstart', function() {
         tipTimer = setTimeout(showPlayTip, 1000);
     });
-    reset.addEventListener('mouseover', function() {
+    reset.addEventListener('touchstart', function() {
         tipTimer = setTimeout(showResetTip, 1000);
     });
     function showResetTip() {
@@ -62,17 +62,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
         playTip.style.opacity = 1;
         playTip.style.transition = 'all .5s';
     }
-    pause.addEventListener('mouseout', function() {
+    pause.addEventListener('touchend', function() {
         console.log('mouseout on pause');
         clearTimeout(tipTimer);
         pauseTip.style.opacity = 0;
     });
-    play.addEventListener('mouseout', function() {
+    play.addEventListener('touchend', function() {
         console.log('mouseout on play');
         clearTimeout(tipTimer);
         playTip.style.opacity = 0;
     });
-    reset.addEventListener('mouseout', function() {
+    reset.addEventListener('touchend', function() {
         console.log('mouseout on play');
         clearTimeout(tipTimer);
         resetTip.style.opacity = 0;
