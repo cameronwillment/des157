@@ -52,41 +52,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log('showing msg');
         resetTip.style.opacity = 1;
         resetTip.style.transition = 'all .5s';
-        setTimeout(clearTips,1000);
+        // setTimeout(clearTips,1000);
     }
     function showPauseTip() {
         console.log('showing msg');
         pauseTip.style.opacity = 1;
         pauseTip.style.transition = 'all .5s';
-        setTimeout(clearTips,1000);
+        // setTimeout(clearTips,1000);
     }
     function showPlayTip() {
         console.log('showing msg');
         playTip.style.opacity = 1;
         playTip.style.transition = 'all .5s';
-        setTimeout(clearTips,1000);
+        // setTimeout(clearTips,1000);
     }
-    // pause.addEventListener('touchend', function() {
-    //     console.log('mouseout on pause');
-    //     clearTimeout(tipTimer);
-    //     pauseTip.style.opacity = 0;
-    // });
-    // play.addEventListener('touchend', function() {
-    //     console.log('mouseout on play');
-    //     clearTimeout(tipTimer);
-    //     playTip.style.opacity = 0;
-    // });
-    function clearTips(){
-      clearTimeout(tipTimer);
-      pauseTip.style.opacity = 0;
-      playTip.style.opacity = 0;
-      resetTip.style.opacity = 0;
-    }
-    // reset.addEventListener('touchend', function() {
-    //     console.log('mouseout on play');
-    //     clearTimeout(tipTimer);
-    //     resetTip.style.opacity = 0;
-    // });
+    pause.addEventListener('mouseout', function() {
+        console.log('mouseout on pause');
+        clearTimeout(tipTimer);
+        pauseTip.style.opacity = 0;
+    });
+    play.addEventListener('mouseout', function() {
+        console.log('mouseout on play');
+        clearTimeout(tipTimer);
+        playTip.style.opacity = 0;
+    });
+    // function clearTips(){
+    //   clearTimeout(tipTimer);
+    //   pauseTip.style.opacity = 0;
+    //   playTip.style.opacity = 0;
+    //   resetTip.style.opacity = 0;
+    // }
+    reset.addEventListener('mouseout', function() {
+        console.log('mouseout on play');
+        clearTimeout(tipTimer);
+        resetTip.style.opacity = 0;
+    });
 
     function gameOver() {
 
