@@ -6,75 +6,138 @@
 /* start all css with a reset */
 
 * {
-  font-family: "Arial";
-  margin: 0px;
-  padding: 0px;
+    font-family: "Arial";
+    margin: 0px;
+    padding: 0px;
+}
 
-
-}
-h1{
-
-  text-align: center;
-}
-body{
-  background-color: black;
-}
-#container{
-  position: relative;
-  margin: auto;
-  background-color: white;
-  height: 1674px;
-  width: 980px;
-}
-/*img{
-  position: absolute;
-}*/
-#timer1{
-  position: absolute;;
-  bottom:100px;
-  left:247.5px;
-
-}
-#timer2{
-  position: absolute;;
-  top:100px;
-  left:247.5px;
-}
-#pause{
-  position: absolute;;
-  top:590px;
-  left:238px;
-}
-#play{
-  position: absolute;;
-  top:550px;
-  left:50px;
-}
-#restart{
-  position: absolute;;
-  top:550px;
-  right:50px;
-}
-  footer{
-    /*display: inline-block;*/
-
-    /*background-color: lightpink;*/
-    height: 40px;
-    width: 700px;
-    margin:auto;
-    margin-top: 300px;
-  }
-  /*#footer div{
-    background-color: grey;
-  }*/
-  #footerList li {
-
-    font-size: 15px;
+h1 {
+    font-size: 300px;
     text-align: center;
-    /*display: inline-block;*/
-     list-style-type: none;
-    float: left;
-    width: 100px;
-    /*position: relative;*/
+}
 
-  }
+body {
+    background-color: black;
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    height: 1674px;
+    width: 980px;
+    display: inline-block;
+}
+
+#titlePage {
+    display: none;
+    height: 1674px;
+    width: 980px;
+    background-color: grey;
+}
+
+#newGame {
+    position: absolute;
+    top: 710px;
+    left: 355px;
+}
+
+#time1 {
+    color: #4A4A4A;
+    font-weight: bold;
+    position: absolute;
+    bottom: 230px;
+    left: 178px;
+    font-size: 150px;
+}
+
+#time2 {
+    /* found online how to flip text  */
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    /*
+  https://priteshgupta.com/2011/09/flip-or-reverse-text-using-css/
+  */
+    color: #4A4A4A;
+    font-weight: bold;
+    position: absolute;
+    bottom: 230px;
+    left: 178px;
+    font-size: 150px;
+}
+
+#timer1 {
+    position: absolute;
+    bottom: 50px;
+    left: 159px;
+}
+
+#timer2 {
+    position: absolute;
+    top: 50px;
+    left: 159px;
+}
+
+#pause {
+    position: absolute;
+    top: 750px;
+    left: 320px;
+}
+
+#play {
+    position: absolute;
+    top: 700px;
+    left: 150px;
+}
+
+#reset {
+    position: absolute;
+    top: 700px;
+    right: 150px;
+}
+
+.tip {
+    position: absolute;
+    padding: 24px;
+    border-radius: 20px;
+    font-size: 100px;
+    top: 500px;
+    left: 350px;
+    z-index: 2;
+    margin: auto;
+    font-weight: bold;
+    color: #222;
+    background-color: white;
+    opacity: 0;
+}
+
+footer {
+    /*background-color: blue;*/
+    /*height: 00px;*/
+    width: 890px;
+    /*margin: auto;*/
+    /*float:left;*/
+    /*margin-top: 100px;*/
+}
+
+#footerList {
+    float: left;
+}
+
+#footerList li {
+    display: inline;
+    line-height: 50px;
+    font-size: 50px;
+    padding: .2em 1em;
+    color: white;
+    list-style-type: none;
+    width: 700px;
+}
+
+a {
+    color: white;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Studio4 -- Chess Timer</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
 
     <script src='script.js' type="text/javascript"></script>
 </head>
@@ -16,33 +16,68 @@ now she has but two. -->
 
 <body>
 
-  <header>
-    <!-- <h1>Craft a limerick!</h1> -->
-  </header>
-  <div id = "container">
-    <img id = "timer1" src = "images/timer1.png">
-    <img id = "timer2" src = "images/timer2.png">
-    <img id = "pause" src = "images/pause.png">
-    <img id = "play" src = "images/play.png">
-    <img id = "restart" src = "images/restart.png">
-  </div>
+    <header>
+        <!-- <h1>Craft a limerick!</h1> -->
+    </header>
+    <div class="scroller">
+        <div id="titlePage">
+            <h1>Chess Clock</h1>
+            <footer>
+
+                <ul id="footerList">
+                    <li> <a href="https://github.com/cameronwillment/des157"> GitHub </a> </li>
+
+                    <li> <a href="mailto:cmwillment@ucdavis.edu">email </a> </li>
+
+                    <li> <a href="https://validator.w3.org/check?uri=referer">html5</a> </li>
+
+                    <li> <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a> </li>
+                    <li> v </li>
+
+                </ul>
+                <!-- </div> -->
+
+            </footer>
+        </div>
+        <div id="container">
+            <div id="timer1">
+                <img src="images/timer1.png">
+                <p id="time1"></p>
+            </div>
+
+            <img id="pause" src="images/pause.png">
+            <div class = "tip" id = "pauseTip">pause</div>
+            <img id="play" src="images/play.png">
+            <div class = "tip" id = "playTip">play</div>
+            <img id="reset" src="images/reset.png">
+            <div class = "tip" id = "resetTip">reset</div>
+            <img id="newGame" src="images/reset.png">
+            <div id="timer2">
+                <img src="images/timer2.png">
+                <p id="time2"></p>
+            </div>
+
+        </div>
 
 
-  <footer>
 
-       <ul id = "footerList">
-         <li> <a href = "https://github.com/cameronwillment/des157"> GitHub </a> </li>
-         <li> | </li>
-         <li> <a href = "mailto:cmwillment@ucdavis.edu"> email </a> </li>
-         <li> | </li>
-         <li> <a href="https://validator.w3.org/check?uri=referer">valid html 5</a> </li>
-         <li> | </li>
-         <li> <a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a> </li>
-       </ul>
-    <!-- </div> -->
-
-  </footer>
 
 </body>
+<footer>
+
+    <ul id="footerList">
+        <li> <a href="https://github.com/cameronwillment/des157"> GitHub </a> </li>
+
+        <li> <a href="mailto:cmwillment@ucdavis.edu">email </a> </li>
+
+        <li> <a href="https://validator.w3.org/check?uri=referer">html5</a> </li>
+
+        <li> <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a> </li>
+
+
+    </ul>
+    <!-- </div> -->
+
+</footer>
 
 </html>
