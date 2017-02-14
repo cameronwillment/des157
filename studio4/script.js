@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         clearTimeout(tipTimer);
         playTip.style.opacity = 0;
     });
-    // function clearTips(){
-    //   clearTimeout(tipTimer);
-    //   pauseTip.style.opacity = 0;
-    //   playTip.style.opacity = 0;
-    //   resetTip.style.opacity = 0;
-    // }
+    function clearTips(){
+      clearTimeout(tipTimer);
+      pauseTip.style.opacity = 0;
+      playTip.style.opacity = 0;
+      resetTip.style.opacity = 0;
+    }
     reset.addEventListener('mouseout', function() {
         console.log('mouseout on play');
         clearTimeout(tipTimer);
@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         play.style.display = "initial";
         reset.style.display = "initial";
         clearInterval(myVar);
+        clearTips();
         // resume(id);
     }
 
@@ -194,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         stopped = false;
         t1.innerHTML = "5:00";
         t2.innerHTML = "5:00";
-
+        clearTips();
     }
 
     function resume() {
@@ -215,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             play.style.display = "none";
             reset.style.display = "none";
         }
+        clearTips();
     }
 
     function formatTime(time) {
