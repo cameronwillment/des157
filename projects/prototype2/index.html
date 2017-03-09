@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CamLib</title>
+    <link href="style.css" rel="stylesheet"/>
+
+    <script src='script.js' type="text/javascript"></script>
+</head>
+<!-- There once was a lady named sue,
+who loved nothing more than to rue
+and she did so upon a table
+until one day she slipped on a cable
+now she has but two. -->
+
+<body>
+<img id = "firstLoad" src = "./FirstLoad.png" width = "300px" alt = "img" onclick = "fun1()">
+<img id = "createProfile" src = "./CreateProfile.png" width = "300px" alt = "img" onclick="fun2()">
+<img id = "home" src = "./Home.png" width = "300px" alt = "img" onclick="fun3()">
+<script>
+function fun1() {
+    document.getElementById("firstLoad").style.display = "none";
+    document.getElementById("createProfile").style.display = "initial";
+}
+function fun2() {
+    document.getElementById("createProfile").style.display = "none";
+      document.getElementById("home").style.display = "initial";
+}
+function fun3() {
+    document.getElementById("firstLoad").style.display = "init";
+}
+</script>
+</body>
+
+</html>
