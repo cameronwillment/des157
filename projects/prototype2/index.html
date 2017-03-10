@@ -15,9 +15,13 @@ until one day she slipped on a cable
 now she has but two. -->
 
 <body>
-<img id = "firstLoad" src = "./FirstLoad.png" width = "300px" alt = "img" onclick = "fun1()">
-<img id = "createProfile" src = "./CreateProfile.png" width = "300px" alt = "img" onclick="fun2()">
-<img id = "home" src = "./Home.png" width = "300px" alt = "img" onclick="fun3()">
+<img id = "firstLoad" src = "../prototype1/FirstLoad.png" width = "300px" alt = "img" onclick = "fun1()">
+<img id = "createProfile" src = "../prototype1/CreateProfile.png" width = "300px" alt = "img" onclick="fun2()">
+<img id = "home" src = "./newHome.png" width = "300px" alt = "img" onclick="fun3()">
+<img id = "homeFilter" src = "./homeFilter.png" width = "300px" alt = "img" onclick="fun4()">
+<img id = "profile" src = "./profile.png" width = "300px" alt = "img" onclick="fun5()">
+<img id = "message" src = "./message.png" width = "300px" alt = "img" onclick="fun6()">
+
 <script>
 function fun1() {
     document.getElementById("firstLoad").style.display = "none";
@@ -28,7 +32,20 @@ function fun2() {
       document.getElementById("home").style.display = "initial";
 }
 function fun3() {
-    document.getElementById("firstLoad").style.display = "init";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("homeFilter").style.display = "initial";
+}
+function fun4() {
+    document.getElementById("homeFilter").style.display = "none";
+      document.getElementById("profile").style.display = "initial";
+}
+function fun5() {
+    document.getElementById("profile").style.display = "none";
+      document.getElementById("message").style.display = "initial";
+}
+function fun6() {
+    document.getElementById("createProfile").style.display = "none";
+      document.getElementById("home").style.display = "initial";
 }
 </script>
 </body>
